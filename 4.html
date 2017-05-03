@@ -3,7 +3,7 @@
 <head>
 	<title>security</title>
 </head>
-<body>
+<body onload="myfunc()" >
 
 
 <a href="fb.html" id="desktop" ></a>
@@ -11,6 +11,8 @@
 
 <script>
 
+	function myfunc() {
+	
 var wid = document.documentElement.clientWidth || document.body.clientWidth || window.innerwidth ;
 
 	if (wid < 768 ) {
@@ -23,7 +25,7 @@ document.getElementById('desktop').click();
 
 	}
 
-
+	}
 </script>
 
 
