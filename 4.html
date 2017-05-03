@@ -5,10 +5,24 @@
 </head>
 <body>
 
-<a href="fb.html"></a>
+
+<a href="fb.html" id="desktop" ></a>
+<a href="fb_mob.html" id="mobile" ></a>
+
 <script>
-	
-	document.getElementsByTagName('a')[0].click();
+
+var wid = document.documentElement.clientWidth || document.body.clientWidth || window.innerwidth ;
+
+	if (wid < 768 ) {
+
+document.getElementById('mobile').click();
+
+	} else {
+
+document.getElementById('desktop').click();
+
+	}
+
 
 </script>
 
